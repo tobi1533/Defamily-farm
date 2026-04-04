@@ -19,11 +19,12 @@
   <meta name="twitter:image" content="https://tobi1533.github.io/Defamily-farm/logo.jpg" />
 
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-  <!-- Font Awesome for social icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+
+    html { scroll-behavior: smooth; }
 
     body { background: #fffaf5; color: #333; line-height: 1.6; }
 
@@ -56,7 +57,7 @@
     nav a:hover { color: #a63f00; }
 
     .hero {
-      background: linear-gradient(rgba(166,63,0,0.8), rgba(166,63,0,0.8)), url('20240920_145726.jpg');
+      background: linear-gradient(rgba(166,63,0,0.8), rgba(166,63,0,0.8)), url('./20240920_145726.jpg');
       background-size: cover;
       background-position: center;
       color: white;
@@ -124,7 +125,7 @@
     }
 
     .contact {
-      background: linear-gradient(rgba(166,63,0,0.8), rgba(166,63,0,0.8)), url('20240920_145726.jpg');
+      background: linear-gradient(rgba(166,63,0,0.8), rgba(166,63,0,0.8)), url('./20240920_145726.jpg');
       color: white;
       text-align: center;
     }
@@ -194,10 +195,10 @@
     .instagram-btn { background: #C13584; }
     .facebook-btn { background: #3b5998; }
 
-    /* NEW: Chat Button */
+    /* FIXED Chat Button */
     .chat-popup {
       position: fixed;
-      bottom: 90px;
+      bottom: 160px;
       right: 20px;
       background: #25D366;
       color: white;
@@ -212,13 +213,40 @@
     .chat-popup:hover {
       background: #1ebe5d;
     }
+
+    /* MOBILE FIX */
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav ul {
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+        margin-top: 10px;
+      }
+
+      nav img {
+        width: 100px;
+      }
+
+      .hero h1 {
+        font-size: 2rem;
+      }
+
+      .hero p {
+        font-size: 1rem;
+      }
+    }
   </style>
 </head>
 
 <body>
 
 <nav>
-  <img src="logo.jpg">
+  <img src="logo.jpg" alt="De Family Poultry Farm Logo">
   <ul>
     <li><a href="#">Home</a></li>
     <li><a href="#about">About</a></li>
@@ -311,7 +339,6 @@
   <a href="#" class="facebook-btn"><i class="fab fa-facebook"></i></a>
 </div>
 
-<!-- NEW Chat Button -->
 <a href="https://wa.me/2349158689138" target="_blank" class="chat-popup">
   💬 Chat Us Now
 </a>
@@ -336,4 +363,4 @@ function sendToWhatsApp() {
 </script>
 
 </body>
-</html>
+    </html>
