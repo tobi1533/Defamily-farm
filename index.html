@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DE FAMILY POULTRY FARM</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <!-- Font Awesome for social icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+
+    body { background: #fffaf5; color: #333; line-height: 1.6; }
+
+    nav {
+      position: sticky;
+      top: 0;
+      background: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 20px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      z-index: 1000;
+    }
+
+    nav img { width: 120px; }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+
+    nav a:hover { color: #a63f00; }
+
+    .hero {
+      background: linear-gradient(rgba(166,63,0,0.8), rgba(166,63,0,0.8)), url('20240920_145726.jpg');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 110px 20px;
+      text-align: center;
+    }
+
+    .hero h1 { font-size: 3rem; margin-bottom: 10px; }
+    .hero p { font-size: 1.2rem; margin-bottom: 20px; }
+
+    .cta {
+      background: white;
+      color: #a63f00;
+      padding: 12px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    section { padding: 60px 20px; }
+
+    h2 { text-align: center; margin-bottom: 25px; color: #a63f00; }
+
+    .about { max-width: 900px; margin: auto; text-align: center; }
+
+    .products { background: #fff3e6; }
+
+    .product-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .product-item {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      width: 230px;
+      transition: 0.3s;
+      text-align: center;
+    }
+
+    .product-item p {
+      font-size: 0.9rem;
+      margin-top: 10px;
+    }
+
+    .product-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+
+    .gallery-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 10px;
+    }
+
+    .gallery-container img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .contact {
+      background: linear-gradient(rgba(166,63,0,0.8), rgba(166,63,0,0.8)), url('20240920_145726.jpg');
+      color: white;
+      text-align: center;
+    }
+
+    form {
+      max-width: 400px;
+      margin: 20px auto;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    input, textarea {
+      padding: 10px;
+      border-radius: 6px;
+      border: none;
+    }
+
+    button {
+      background: white;
+      color: #a63f00;
+      padding: 10px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: 600;
+    }
+
+    footer {
+      background: #a63f00;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+
+    footer a { color: white; text-decoration: none; }
+    footer a:hover { color: #fff0e6; }
+
+    /* Floating social buttons */
+    .social-floating {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      z-index: 1000;
+    }
+
+    .social-floating a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      color: white;
+      font-size: 1.5rem;
+      text-decoration: none;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      transition: transform 0.2s;
+    }
+
+    .social-floating a:hover { transform: translateY(-3px); }
+
+    .whatsapp-btn { background: #25D366; }
+    .instagram-btn { background: #C13584; }
+    .facebook-btn { background: #3b5998; }
+  </style>
+</head>
+
+<body>
+
+<nav>
+  <img src="logo.jpg">
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#products">Products</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<section class="hero">
+  <h1>Premium Poultry Farming You Can Trust</h1>
+  <p>Raising Healthy Birds with Care • Delivering Fresh Eggs & Quality Meat Daily</p>
+  <a href="#contact" class="cta">Place an Order</a>
+</section>
+
+<section id="about" class="about">
+  <h2>About Us</h2>
+  <p>
+    DE FAMILY POULTRY FARM is a dedicated and fast-growing poultry business committed to producing 
+    high-quality poultry products for homes, retailers, and businesses.
+  </p>
+  <p>
+    Our mission is to provide affordable, nutritious, and reliable poultry products while maintaining 
+    the highest standards of animal care and customer satisfaction.
+  </p>
+</section>
+
+<section id="products" class="products">
+  <h2>Our Products</h2>
+  <div class="product-list">
+
+    <div class="product-item">
+      <h3>Broilers</h3>
+      <p>Healthy, well-raised meat birds available for bulk and retail purchase.</p>
+    </div>
+
+    <div class="product-item">
+      <h3>Fresh Eggs</h3>
+      <p>Farm-fresh eggs produced daily from strong, healthy layers.</p>
+    </div>
+
+    <div class="product-item">
+      <h3>Poultry Feed</h3>
+      <p>High-quality feed that supports growth, strength, and productivity.</p>
+    </div>
+
+    <div class="product-item">
+      <h3>Catfish</h3>
+      <p>Fresh, healthy catfish raised in clean, controlled environments. Available for retail and bulk supply.</p>
+    </div>
+
+  </div>
+</section>
+
+<section id="gallery">
+  <h2>Our Farm Gallery</h2>
+  <div class="gallery-container">
+
+    <img src="20240827_005845.jpg">
+    <img src="20240908_073141.jpg">
+    <img src="20240920_145726.jpg">
+    <img src="20240920_145727(0).jpg">
+    <img src="20240920_145727.jpg">
+    <img src="20240920_145742.jpg">
+    <img src="20240920_145801.jpg">
+    <img src="373B5E36-7766-43F0-BEE6-8D0EDEF3378D_Original.jpg">
+    <img src="CFB6689B-91B3-416E-9D91-118AB8D18B98_Original.jpg">
+    <img src="IMG-20241002-WA0005.jpg">
+    <img src="IMG-20241002-WA0006.jpg">
+    <img src="IMG_5493.jpg">
+
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <h2>Contact Us</h2>
+  <p>📞 Call or WhatsApp: 09158689138</p>
+  <p>📍 Available for orders, partnerships, and bulk supply.</p>
+
+  <!-- UPDATED FORM -->
+  <form onsubmit="sendToWhatsApp(); return false;">
+    <input type="text" id="name" placeholder="Your Name" required>
+    <input type="email" id="email" placeholder="Your Email" required>
+    <textarea id="message" placeholder="Your Message or Order Request"></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+<!-- Floating Social Buttons -->
+<div class="social-floating">
+  <a href="https://wa.me/qr/QI47S2UZ7DXED1" target="_blank" class="whatsapp-btn"><i class="fab fa-whatsapp"></i></a>
+  <a href="https://www.instagram.com/yourusername" target="_blank" class="instagram-btn"><i class="fab fa-instagram"></i></a>
+  <a href="https://www.facebook.com/yourpage" target="_blank" class="facebook-btn"><i class="fab fa-facebook"></i></a>
+</div>
+
+<footer>
+  &copy; 2026 DE FAMILY POULTRY FARM | Quality You Can Trust
+</footer>
+
+<!-- WhatsApp Script -->
+<script>
+function sendToWhatsApp() {
+  let name = document.getElementById("name").value;
+  let email = document.getElementById("email").value;
+  let message = document.getElementById("message").value;
+
+  let url = "https://wa.me/2349158689138?text="
+    + "Name: " + encodeURIComponent(name) + "%0a"
+    + "Email: " + encodeURIComponent(email) + "%0a"
+    + "Message: " + encodeURIComponent(message);
+
+  window.open(url, "_blank");
+}
+</script>
+
+</body>
+  </html>
