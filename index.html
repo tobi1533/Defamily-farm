@@ -5,18 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>DE FAMILY POULTRY FARM</title>
 
-<!-- Open Graph Meta Tags -->
-<meta property="og:title" content="De Family Poultry Farm 🌾" />
-<meta property="og:description" content="Premium poultry farming you can trust. Fresh eggs, broilers, and catfish available daily." />
-<meta property="og:image" content="https://tobi1533.github.io/Defamily-farm/logo.jpg" />
-<meta property="og:url" content="https://tobi1533.github.io/Defamily-farm/" />
-<meta property="og:type" content="website" />
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="De Family Poultry Farm 🌾" />
+  <meta property="og:description" content="Premium poultry farm. Call or WhatsApp: 09158689138 for fresh eggs, broilers & catfish." />
+  <meta property="og:image" content="https://tobi1533.github.io/Defamily-farm/logo.jpg" />
+  <meta property="og:url" content="https://tobi1533.github.io/Defamily-farm/" />
+  <meta property="og:type" content="website" />
 
-<!-- Twitter Preview -->
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="De Family Poultry Farm 🌾" />
-<meta name="twitter:description" content="Fresh eggs, healthy birds, and quality farm produce." />
-<meta name="twitter:image" content="https://tobi1533.github.io/Defamily-farm/logo.jpg" />
+  <!-- Twitter Preview -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="De Family Poultry Farm 🌾" />
+  <meta name="twitter:description" content="Call or WhatsApp: 09158689138 for fresh eggs, broilers & catfish." />
+  <meta name="twitter:image" content="https://tobi1533.github.io/Defamily-farm/logo.jpg" />
+
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
   <!-- Font Awesome for social icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -192,6 +193,25 @@
     .whatsapp-btn { background: #25D366; }
     .instagram-btn { background: #C13584; }
     .facebook-btn { background: #3b5998; }
+
+    /* NEW: Chat Button */
+    .chat-popup {
+      position: fixed;
+      bottom: 90px;
+      right: 20px;
+      background: #25D366;
+      color: white;
+      padding: 12px 18px;
+      border-radius: 25px;
+      font-weight: 600;
+      text-decoration: none;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      z-index: 1000;
+    }
+
+    .chat-popup:hover {
+      background: #1ebe5d;
+    }
   </style>
 </head>
 
@@ -277,7 +297,6 @@
   <p>📞 Call or WhatsApp: 09158689138</p>
   <p>📍 Available for orders, partnerships, and bulk supply.</p>
 
-  <!-- UPDATED FORM -->
   <form onsubmit="sendToWhatsApp(); return false;">
     <input type="text" id="name" placeholder="Your Name" required>
     <input type="email" id="email" placeholder="Your Email" required>
@@ -286,18 +305,21 @@
   </form>
 </section>
 
-<!-- Floating Social Buttons -->
 <div class="social-floating">
   <a href="https://wa.me/qr/QI47S2UZ7DXED1" target="_blank" class="whatsapp-btn"><i class="fab fa-whatsapp"></i></a>
-  <a href="https://www.instagram.com/yourusername" target="_blank" class="instagram-btn"><i class="fab fa-instagram"></i></a>
-  <a href="https://www.facebook.com/yourpage" target="_blank" class="facebook-btn"><i class="fab fa-facebook"></i></a>
+  <a href="#" class="instagram-btn"><i class="fab fa-instagram"></i></a>
+  <a href="#" class="facebook-btn"><i class="fab fa-facebook"></i></a>
 </div>
+
+<!-- NEW Chat Button -->
+<a href="https://wa.me/2349158689138" target="_blank" class="chat-popup">
+  💬 Chat Us Now
+</a>
 
 <footer>
   &copy; 2026 DE FAMILY POULTRY FARM | Quality You Can Trust
 </footer>
 
-<!-- WhatsApp Script -->
 <script>
 function sendToWhatsApp() {
   let name = document.getElementById("name").value;
@@ -314,4 +336,4 @@ function sendToWhatsApp() {
 </script>
 
 </body>
-  </html>
+</html>
